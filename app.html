@@ -1,42 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>النظام اليومي</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="layout">
-
-  <aside>
-    <h2>📊 النظام اليومي</h2>
-    <button onclick="showSection('tasks')">📋 المهام</button>
-    <button onclick="showSection('history')">🗂 السجل</button>
-    <button onclick="logout()">🚪 خروج</button>
-  </aside>
-
-  <main>
-
-    <!-- المهام -->
-    <section id="tasks">
-      <h3>📋 المهام</h3>
-
-      <input id="taskInput" placeholder="اسم المهمة">
-      <button onclick="addTask()">إضافة</button>
-
-      <ul id="taskList"></ul>
-    </section>
-
-    <!-- السجل -->
-    <section id="history" class="hidden">
-      <h3>🗂 السجل اليومي</h3>
-      <ul id="historyList"></ul>
-    </section>
-
-  </main>
-</div>
-
-<script src="app.js"></script>
-</body>
-</html>
