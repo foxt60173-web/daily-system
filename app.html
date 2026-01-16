@@ -1,47 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>النظام اليومي</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-  <h2>📋 النظام اليومي</h2>
-  <button onclick="logout()">خروج</button>
-</header>
-
-<div class="container">
-
-  <!-- المهام -->
-  <section>
-    <h3>المهام</h3>
-    <input id="taskInput" placeholder="اكتب المهمة">
-    <button onclick="addTask()">إضافة</button>
-    <ul id="taskList"></ul>
-  </section>
-
-  <!-- المصروفات -->
-  <section>
-    <h3>المصروفات</h3>
-    <input id="expenseName" placeholder="سبب الصرف">
-    <input id="expenseAmount" type="number" placeholder="المبلغ">
-    <button onclick="addExpense()">إضافة</button>
-    <ul id="expenseList"></ul>
-  </section>
-
-  <!-- الدخل -->
-  <section>
-    <h3>الدخل</h3>
-    <input id="incomeName" placeholder="مصدر الدخل">
-    <input id="incomeAmount" type="number" placeholder="المبلغ">
-    <button onclick="addIncome()">إضافة</button>
-    <ul id="incomeList"></ul>
-  </section>
-
-</div>
-
-<script src="app.js"></script>
-</body>
-</html>
