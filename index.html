@@ -1,28 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>تسجيل الدخول</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg">
-
-<div class="card">
-  <h2>🔐 تسجيل الدخول</h2>
-
-  <input id="username" placeholder="اسم المستخدم">
-  <input id="password" type="password" placeholder="كلمة المرور">
-  <button onclick="login()">دخول</button>
-  <button class="outline" onclick="register()">تسجيل جديد</button>
-  
-  <p id="msg"></p>
-
-  <div class="theme-toggle">
-    <button onclick="toggleTheme()">تبديل الوضع 🌙/☀️</button>
-  </div>
-</div>
-
-<script src="libs/crypto-js.min.js"></script> <!-- للتشفير -->
-<script src="app.js"></script>
-</body>
-</html>
