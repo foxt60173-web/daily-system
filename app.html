@@ -1,39 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>النظام</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg">
-
-<div class="dashboard">
-  <h1>👋 أهلاً بيك <span id="user"></span></h1>
-
-  <div class="cards">
-    <div class="box blue">📊 تقارير</div>
-    <div class="box green">💰 أرباح</div>
-    <div class="box orange" onclick="showTasks()">📝 مهام</div>
-    <div class="box red" onclick="showSettings()">⚙️ إعدادات</div>
-  </div>
-
-  <div id="taskSection" style="display:none;">
-    <h3>📝 المهام</h3>
-    <input id="newTask" placeholder="أضف مهمة جديدة">
-    <button onclick="addTask()">أضف</button>
-    <ul id="taskList"></ul>
-  </div>
-
-  <div id="settingsSection" style="display:none;">
-    <h3>⚙️ الإعدادات</h3>
-    <button onclick="toggleTheme()">تبديل الوضع 🌙/☀️</button>
-  </div>
-
-  <button onclick="logout()">تسجيل خروج</button>
-</div>
-
-<script src="libs/chart.min.js"></script> <!-- للرسومات البيانية -->
-<script src="libs/crypto-js.min.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
