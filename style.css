@@ -1,0 +1,81 @@
+body{
+font-family:Tahoma;
+margin:0;
+background:#F9FBFD;
+direction:rtl;
+}
+
+header{
+background:#2A7FFF;
+color:white;
+padding:30px;
+text-align:center;
+animation:fade 1s;
+}
+
+.container{
+width:90%;
+margin:auto;
+margin-top:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+animation:up 1s;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+select,button{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+margin-top:10px;
+font-size:16px;
+}
+
+button{
+background:#FF9F1C;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background:#e98b00;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-size:16px;
+}
+
+.back{
+display:inline-block;
+margin:20px;
+color:#2A7FFF;
+text-decoration:none;
+}
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes up{
+from{transform:translateY(50px);opacity:0}
+to{transform:translateY(0);opacity:1}
+}
